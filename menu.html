@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menú | Foodie & Soul</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="header">
+  <a class="logo" href="index.html">
+    <img src="img/logo.png" alt="Foodie & Soul Logo">
+  </a>
+
+  <nav class="nav">
+    <a href="index.html">Inicio</a>
+    <a href="menu.html">Menú</a>
+    <a href="index.html#nosotros">Nosotros</a>
+    <a href="https://maps.google.com/?q=Foodie%20%26%20Soul%20Mediterranean%20Restaurant" target="_blank">Ubicación</a>
+    <a href="index.html#contacto">Contacto</a>
+  </nav>
+</header>
+
+<section class="menu-hero">
+  <img class="menu-page-logo" src="img/logo.png" alt="Foodie & Soul Logo">
+  <h1>Menú Completo</h1>
+  <p>Filtra por categoría y encuentra tu plato favorito.</p>
+</section>
+
+<section class="section menu-section">
+  <div class="filters">
+    <button onclick="filtrarMenu('todos')">Todos</button>
+    <button onclick="filtrarMenu('entradas')">Entradas</button>
+    <button onclick="filtrarMenu('tierra')">Tierra</button>
+    <button onclick="filtrarMenu('mar')">Mar</button>
+    <button onclick="filtrarMenu('mofongo')">Mofongo</button>
+    <button onclick="filtrarMenu('ceviches')">Ceviches</button>
+    <button onclick="filtrarMenu('pastas')">Pastas</button>
+    <button onclick="filtrarMenu('ensaladas')">Ensaladas</button>
+    <button onclick="filtrarMenu('texmex')">Tex-Mex</button>
+    <button onclick="filtrarMenu('burgers')">Burgers</button>
+    <button onclick="filtrarMenu('postres')">Postres</button>
+    <button onclick="filtrarMenu('mocktails')">Mocktails</button>
+    <button onclick="filtrarMenu('jugos')">Jugos</button>
+    <button onclick="filtrarMenu('cervezas')">Cervezas</button>
+  </div>
+
+  <div class="menu-grid" id="menuContainer"></div>
+
+  <p class="tax-note">Impuestos no incluidos</p>
+</section>
+
+<footer>
+  <img src="img/logo.png" alt="Foodie & Soul Logo">
+  <p>© 2026 Foodie & Soul. Todos los derechos reservados.</p>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/18496207174?text=Hola,%20quiero%20hacer%20una%20reserva" target="_blank">💬</a>
+
+<script src="menu.js"></script>
+</body>
+</html>
